@@ -1,0 +1,36 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+.logo img{
+  max-width: 7em;
+}
+.pesquisa input{
+  width: 20em;
+  height: 2em;
+}
+.wrapper{
+  display: flex;
+  align: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 1em 0em;
+  padding: 0 23em;
+}
+.navegacao ul{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+.navegacao i{
+  font-size: 27px;
+}
+#add{
+  font-size: 33px;
+}
+#message{
+  font-size: 25px;
+}
+#home{
+  font-size: 30px;
+}
