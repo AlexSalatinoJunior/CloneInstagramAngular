@@ -1,33 +1,42 @@
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<div class="wrapper">
-  <div class="logo">
-    <img src="../assets/logo-escrito.png">
-  </div>
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../node_modules/normalize.css/normalize.css" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
 
-  <div class="pesquisa">
-    <input>
-  </div>
+    <div class="logo">
+      <img src="../assets/logo-escrito.png">
+    </div>
+    <div id="espacamento"></div>
+    <div class="pesquisa" (click)="abreInput()">
+      <i class="bi-search" id="search" style="font-size: 1em; padding: 0 0 0 15px; color: rgb(170, 170, 170);"></i>
+      <input id="textarea" type="username" (focus)="focarInput()" (blur)="desfocarInput()" rows="1" placeholder="Pesquisar">
+    </div>
 
-  <div class="navegacao">
-    <ul>
-      <li>
-        <a><i class="material-icons" id="home">home</i></a>
-      </li>
-      <li>
-        <a><i class="material-icons" id="message">message</i></a>
-      </li>
-      <li>
-        <a><i class="material-icons" id="add">add</i></a>
-      </li>
-      <li>
-        <a><i class="material-icons">explore</i></a>
-      </li>
-      <li>
-        <a><i class="material-icons">favorite_border</i></a>
-      </li>
-      <li>
-        <a><i class="material-icons">panorama_fish_eye</i></a>
-      </li>
-    </ul>
+    <div class="navegacao">
+      <ul>
+        <li>
+          <a><i class="bi-house-door" id="home" style="font-size: 1.5em;"></i></a>
+        </li>
+        <li>
+          <a><i class="bi-chat" id="message" style="font-size: 1.5em;"></i></a>
+        </li>
+        <li>
+          <a><i class="bi-plus-square" id="add" style="font-size: 1.5em;"></i></a>
+        </li>
+        <li>
+          <a><i class="bi-compass" style="font-size: 1.5em;"></i></a>
+        </li>
+        <li>
+          <a><i class="bi-heart" style="font-size: 1.5em;"></i></a>
+        </li>
+        <li>
+          <a><i class="bi-circle" style="font-size: 1.5em;"></i></a>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
+  <div id="linha"></div>
+</body>
